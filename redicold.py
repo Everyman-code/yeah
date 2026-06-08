@@ -8,8 +8,8 @@ import time
 # KEYS
 # =====================
 
-DISCORD_TOKEN = "MTUxMzM5MDQ1ODEwODI0ODEyNQ.GAvpjk.G3COSW8NJldQMR0mcI0YUIKfNsyk4C0cE8v8IU"
-GROQ_API_KEY = "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"
+DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 client_ai = Groq(api_key=GROQ_API_KEY)
 
